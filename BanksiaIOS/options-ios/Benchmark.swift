@@ -20,7 +20,7 @@ import SwiftUI
 
 struct Benchmark: View {
     @Binding var isNavigationBarHidden: Bool
-    @EnvironmentObject private var game: Game
+    @EnvironmentObject private var game: BanksiaGame
     @State var benchmarkInfo = ""
     @State private var computing = false
     

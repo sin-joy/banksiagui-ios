@@ -19,11 +19,11 @@
 import Foundation
 
 
-class Move {
+class BanksiaMove {
     var from: Int, dest: Int, promotion: Int
-    static let illegalMove = Move(from: -1, dest: -1, promotion: -1)
+    static let illegalMove = BanksiaMove(from: -1, dest: -1, promotion: -1)
     
-    init(move: Move) {
+    init(move: BanksiaMove) {
         from = move.from
         dest = move.dest
         promotion = move.promotion
@@ -40,20 +40,20 @@ class Move {
     }
     
     func isValid() -> Bool  {
-        return Move.isValid(from: from, dest: dest)
+        return BanksiaMove.isValid(from: from, dest: dest)
     }
     
     static func isValid(from: Int, dest: Int) -> Bool {
         return from != dest  && from >= 0 && dest >= 0
     }
     
-    static func == (first: Move, second: Move) -> Bool {
+    static func == (first: BanksiaMove, second: BanksiaMove) -> Bool {
         return first.from == second.from && first.dest == second.dest && first.promotion == second.promotion;
     }
 }
 
 
-class MoveFull : Move {
+class MoveFull : BanksiaMove {
     var piece: Piece
     var score: Int = 0;
     

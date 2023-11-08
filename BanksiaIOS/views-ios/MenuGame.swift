@@ -21,7 +21,7 @@ import Combine
 
 struct GameSetup: View {
     @Binding var isNavigationBarHidden: Bool
-    @EnvironmentObject private var game: Game
+    @EnvironmentObject private var game: BanksiaGame
     
     @State private var nodeString = ""
     @State private var oldEngineIdx = 0

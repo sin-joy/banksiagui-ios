@@ -36,7 +36,7 @@ struct BookPolyglotItem {
     var weight: UInt16 = 0
     var learn: UInt32 = 0
     
-    func getMove(board: ChessBoard) -> Move {
+    func getMove(board: ChessBoard) -> BanksiaMove {
         let df = move & 0x7, dr = move >> 3 & 0x7;
         var dest = Int((7 - dr) * 8 + df)
         
@@ -52,7 +52,7 @@ struct BookPolyglotItem {
         
         let p = Int(move >> 12 & 0x3)
         let promotion: Int = p == 0 ? Piece.EMPTY : (6 - p)
-        return Move(from: from, dest: dest, promotion: promotion)
+        return BanksiaMove(from: from, dest: dest, promotion: promotion)
     }
     
     //      static u16 fromMove(const Hist& hist);
@@ -143,12 +143,12 @@ class BookPolyglot
         return vec
     }
     
-    func probe(board: ChessBoard, forBestMove: Bool) -> Move {
+    func probe(board: ChessBoard, forBestMove: Bool) -> BanksiaMove {
         
         //    var bestMove = Move.illegalMove
         
         if items.isEmpty {
-            return Move.illegalMove
+            return BanksiaMove.illegalMove
         }
         
         let key = board.hashKey
@@ -202,7 +202,7 @@ class BookPolyglot
             //                  }
             //                game->probeMap[this] = bookMoveVec;
         }
-        return Move.illegalMove
+        return BanksiaMove.illegalMove
     }
     
 }

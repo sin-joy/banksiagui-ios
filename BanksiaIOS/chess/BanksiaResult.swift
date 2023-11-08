@@ -19,7 +19,7 @@
 import Foundation
 
 
-class Result {
+class BanksiaResult {
     var result: ResultType
     var reason: ReasonType
     var comment: String
@@ -42,11 +42,11 @@ class Result {
     }
     
     func reasonString() -> String {
-        return Result.reasonStrings[reason.rawValue]
+        return BanksiaResult.reasonStrings[reason.rawValue]
     }
     
     func toShortString() -> String {
-        return Result.resultType2String(type: result, shortFrom: true)
+        return BanksiaResult.resultType2String(type: result, shortFrom: true)
     }
     
     func toString() -> String {
@@ -76,7 +76,7 @@ class Result {
         if t < 0 || t > 3 {
             t = 0
         }
-        return shortFrom ? Result.resultStrings_short[t] : Result.resultStrings[t];
+        return shortFrom ? BanksiaResult.resultStrings_short[t] : BanksiaResult.resultStrings[t];
     }
     
 }

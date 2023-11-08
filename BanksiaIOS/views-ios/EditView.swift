@@ -23,7 +23,7 @@ struct EditView: View {
     @Binding var editingFenString: String
     @Binding var editing: Bool
     
-    @EnvironmentObject var game: Game
+    @EnvironmentObject var game: BanksiaGame
     
     @State private var editingCastleWhiteOO = true
     @State private var editingCastleWhiteOOO = true

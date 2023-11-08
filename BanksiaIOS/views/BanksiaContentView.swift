@@ -20,11 +20,11 @@ import SwiftUI
 import UIKit
 
 
-struct ContentView: View {
+struct BanksiaContentView: View {
     static let version = "1.1"
     
     @EnvironmentObject var userData: UserData
-    @EnvironmentObject var game: Game
+    @EnvironmentObject var game: BanksiaGame
     @State var isNavigationBarHidden: Bool = true
     
     @State var cellWidth: CGFloat = 0
@@ -419,7 +419,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BanksiaContentView()
     }
 }
 

@@ -21,16 +21,16 @@ import SwiftUI
 struct AboutView: View {
     var body: some View {
         VStack {
-            Text("Banksia GUI for iOS, version \(ContentView.version)")
+            Text("Banksia GUI for iOS, version \(BanksiaContentView.version)")
                 .bold()
             Text("by Nguyen Pham, 2020, 2023")
                 .italic()
             
-            Text("Stockfish network: \(Game.networkName(engineIdx: stockfish))")
-            Text("LC0 network: \(Game.networkName(engineIdx: lc0))")
-            Text("RubiChess network: \(Game.networkName(engineIdx: rubi))")
+            Text("Stockfish network: \(BanksiaGame.networkName(engineIdx: stockfish))")
+            Text("LC0 network: \(BanksiaGame.networkName(engineIdx: lc0))")
+            Text("RubiChess network: \(BanksiaGame.networkName(engineIdx: rubi))")
 
-            WebView(text: "credit", isFile: true)
+            BanksiaWebView(text: "credit", isFile: true)
             if #available(iOS 14.0, *) {
                 Link("BanksiaGUI home page", destination: URL(string: "https://banksiagui.com/")!)
                 Link("Nguyen Pham GitHub", destination: URL(string: "https://github.com/nguyenpham/")!)

@@ -21,7 +21,7 @@ import MessageUI
 import MobileCoreServices // << for UTI types
 
 
-extension ContentView {
+extension BanksiaContentView {
     
     func editingUpdateFen() {
         editingFenString = game.chessBoard.getFen(halfCount: 0, fullMoveCount: 0)
@@ -206,7 +206,7 @@ extension ContentView {
     
     func createMenuPopup(size: CGSize) -> some View {
         VStack(spacing: 0) {
-            MenuView(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), menuClick: { (menuTask) -> Void in
+            BanksiaMenuView(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), menuClick: { (menuTask) -> Void in
                 showingPopup_menu = false
                 showingPopup_move = false
                 
@@ -236,7 +236,7 @@ extension ContentView {
                 }
             })
         }
-        .frame(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), height: CGFloat(MenuTask.allCases.count) * ContentView.menuHeight)
+        .frame(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), height: CGFloat(MenuTask.allCases.count) * BanksiaContentView.menuHeight)
         .background(Color(red: 0x3d, green: 0x5a, blue: 0x80))
         .cornerRadius(10.0)
         .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.13), radius: 10.0)
@@ -268,7 +268,7 @@ extension ContentView {
                 }
             })
         }
-        .frame(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), height: CGFloat(MenuMoveTask.allCases.count) * ContentView.menuHeight)
+        .frame(width: size.width * (UIDevice.current.userInterfaceIdiom == .phone ? 0.6 : 0.3), height: CGFloat(MenuMoveTask.allCases.count) * BanksiaContentView.menuHeight)
         .background(Color(red: 0x3d, green: 0x5a, blue: 0x80))
         .cornerRadius(10.0)
         .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.13), radius: 10.0)
@@ -421,7 +421,7 @@ extension ContentView {
 }
 
 /// MARK: The mail part
-extension ContentView {
+extension BanksiaContentView {
     
     /// Delegate for view controller as `MFMailComposeViewControllerDelegate`
     class MailDelegate: NSObject, MFMailComposeViewControllerDelegate {
@@ -458,7 +458,7 @@ extension ContentView {
 }
 
 /// MARK: The message part
-extension ContentView {
+extension BanksiaContentView {
     
     /// Delegate for view controller as `MFMessageComposeViewControllerDelegate`
     class MessageDelegate: NSObject, MFMessageComposeViewControllerDelegate {

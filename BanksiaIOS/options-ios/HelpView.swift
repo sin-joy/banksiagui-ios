@@ -21,7 +21,7 @@ import SwiftUI
 struct HelpView: View {
     var body: some View {
         VStack {
-            WebView(text: "help", isFile: true)
+            BanksiaWebView(text: "help", isFile: true)
         }
         .navigationBarTitle("Help", displayMode: .inline)
     }

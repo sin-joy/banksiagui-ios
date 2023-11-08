@@ -20,28 +20,36 @@ import Foundation
 
 extension String {
     
+    struct UnboundedRange {
+        var range: Range<Int>
+    }
+    
     var length: Int {
         return count
     }
     
     subscript (i: Int) -> String {
-        return self[i ..< i + 1]
+        return self[UnboundedRange(range: i ..< i + 1)]
     }
     
     func substring(fromIndex: Int) -> String {
-        return self[min(fromIndex, length) ..< length]
+        return self[UnboundedRange(range: min(fromIndex, length) ..< length)]
     }
     
     func substring(toIndex: Int) -> String {
-        return self[0 ..< max(0, toIndex)]
+        return self[UnboundedRange(range: 0 ..< max(0, toIndex))]
     }
     
-    subscript (r: Range<Int>) -> String {
-        let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)),
-                                            upper: min(length, max(0, r.upperBound))))
+    subscript (r: UnboundedRange) -> String {
+        let range = Range(
+            uncheckedBounds: (
+                lower: max(0, min(length, r.range.lowerBound)),
+                upper: min(length, max(0, r.range.upperBound))
+            )
+        )
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
-        return String(self[start ..< end])
+        return String(self[start..<end])
     }
 }
 

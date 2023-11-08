@@ -23,7 +23,7 @@ enum VarEnum {
   case turn, analysicOnFly, engine
 }
 
-final class Game: ObservableObject {
+final class BanksiaGame: ObservableObject {
     @Published var chessBoard = ChessBoard()
     @Published var displayingChessBoard = ChessBoard()
     
@@ -394,7 +394,7 @@ final class Game: ObservableObject {
         timeLeft[1 - chessBoard.side.rawValue] -= moveElapseInMillisecond
     }
     
-    func probeBook() -> Move {
+    func probeBook() -> BanksiaMove {
         return book.probe(board: chessBoard, forBestMove: true)
     }
     
@@ -688,7 +688,7 @@ final class Game: ObservableObject {
         return engineIdx >= 0 && engineIdx < networkNames.count ? networkNames[engineIdx] : ""
     }
     func networkName() -> String {
-        return Game.networkName(engineIdx: engineIdx)
+        return BanksiaGame.networkName(engineIdx: engineIdx)
     }
 }
 

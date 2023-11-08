@@ -20,7 +20,7 @@
 import SwiftUI
 import WebKit
 
-struct WebView: UIViewRepresentable {
+struct BanksiaWebView: UIViewRepresentable {
     let text: String
     let isFile: Bool
     
@@ -41,6 +41,6 @@ struct WebView: UIViewRepresentable {
 
 struct Web_Previews: PreviewProvider {
     static var previews: some View {
-        WebView(text: "<html><body>hey hellooo</body></html>", isFile: false)
+        BanksiaWebView(text: "<html><body>hey hellooo</body></html>", isFile: false)
     }
 }

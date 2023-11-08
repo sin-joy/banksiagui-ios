@@ -39,7 +39,7 @@ enum MenuTask : Int, CaseIterable {
     }
 }
 
-struct MenuView: View {
+struct BanksiaMenuView: View {
     let width: CGFloat
     let menuClick: ((_ menuTask: MenuTask) -> Void)
     
@@ -49,7 +49,7 @@ struct MenuView: View {
                 Text(task.getName())
                     .foregroundColor(task == .cancel ? Color.red : Color.blue)
                     .fontWeight(task == .cancel ? .bold : .regular)
-                    .frame(width: self.width, height: ContentView.menuHeight, alignment: .center)
+                    .frame(width: self.width, height: BanksiaContentView.menuHeight, alignment: .center)
             }
             .cornerRadius(20.0)
             .padding(0)

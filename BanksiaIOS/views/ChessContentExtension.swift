@@ -20,7 +20,7 @@ import SwiftUI
 import UIKit
 
 
-extension ContentView {
+extension BanksiaContentView {
     
     func processEngineOutput(_ str: String) {
         assert(!str.isEmpty && !str.contains("\n"))

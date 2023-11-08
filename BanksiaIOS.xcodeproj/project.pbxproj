@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1026EC92543AB3100603CC7 /* BanksiaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B1C02B9D25294BEA00665CA6 /* BanksiaWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B14A8B642528C76500B5704C /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B262528C76500B5704C /* PopupView.swift */; };
-		B14A8B652528C76500B5704C /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B282528C76500B5704C /* Move.swift */; };
+		B14A8B652528C76500B5704C /* BanksiaMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B282528C76500B5704C /* BanksiaMove.swift */; };
 		B14A8B662528C76500B5704C /* ChessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B292528C76500B5704C /* ChessBoard.swift */; };
 		B14A8B672528C76500B5704C /* Hist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2A2528C76500B5704C /* Hist.swift */; };
 		B14A8B682528C76500B5704C /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2B2528C76500B5704C /* Piece.swift */; };
-		B14A8B692528C76500B5704C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2C2528C76500B5704C /* Result.swift */; };
+		B14A8B692528C76500B5704C /* BanksiaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2C2528C76500B5704C /* BanksiaResult.swift */; };
 		B14A8B6A2528C76500B5704C /* ExtensionLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2D2528C76500B5704C /* ExtensionLib.swift */; };
 		B14A8B6B2528C76500B5704C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2E2528C76500B5704C /* Book.swift */; };
 		B14A8B6C2528C76500B5704C /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B2F2528C76500B5704C /* Types.swift */; };
 		B14A8B772528C76500B5704C /* BsIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B3B2528C76500B5704C /* BsIcon.xcassets */; };
 		B14A8B782528C76500B5704C /* ChessContentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B3D2528C76500B5704C /* ChessContentExtension.swift */; };
-		B14A8B792528C76500B5704C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B3E2528C76500B5704C /* ContentView.swift */; };
+		B14A8B792528C76500B5704C /* BanksiaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B3E2528C76500B5704C /* BanksiaContentView.swift */; };
 		B14A8B812528C76500B5704C /* credit.html in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B482528C76500B5704C /* credit.html */; };
 		B14A8B822528C76500B5704C /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B492528C76500B5704C /* help.html */; };
 		B14A8B832528C76500B5704C /* fruit.bin in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B4C2528C76500B5704C /* fruit.bin */; };
@@ -31,7 +30,7 @@
 		B14A8B892528C76500B5704C /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B532528C76500B5704C /* error.wav */; };
 		B14A8B8A2528C76500B5704C /* cap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B14A8B542528C76500B5704C /* cap.wav */; };
 		B14A8B8B2528C76500B5704C /* BanksiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B562528C76500B5704C /* BanksiaApp.swift */; };
-		B14A8B8C2528C76500B5704C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B582528C76500B5704C /* Game.swift */; };
+		B14A8B8C2528C76500B5704C /* BanksiaGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B582528C76500B5704C /* BanksiaGame.swift */; };
 		B14A8B8D2528C76500B5704C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B592528C76500B5704C /* UserData.swift */; };
 		B14A8B8E2528C76500B5704C /* SoundMng.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B5A2528C76500B5704C /* SoundMng.swift */; };
 		B14A8B8F2528C76500B5704C /* EngineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B5B2528C76500B5704C /* EngineData.swift */; };
@@ -42,316 +41,147 @@
 		B14A8B952528C76500B5704C /* GCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B622528C76500B5704C /* GCell.swift */; };
 		B14A8B962528C76500B5704C /* GPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A8B632528C76500B5704C /* GPiece.swift */; };
 		B16A5F412AE3BA6100F6694F /* EngineOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F402AE3BA6100F6694F /* EngineOutput.swift */; };
-		B16A5F482AE3C33700F6694F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F432AE3C33700F6694F /* Game.swift */; };
-		B16A5F492AE3C33700F6694F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F442AE3C33700F6694F /* UserData.swift */; };
-		B16A5F4A2AE3C33700F6694F /* SoundMng.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F452AE3C33700F6694F /* SoundMng.swift */; };
-		B16A5F4B2AE3C33700F6694F /* EngineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F462AE3C33700F6694F /* EngineData.swift */; };
-		B16A5F4C2AE3C33700F6694F /* EngineOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16A5F472AE3C33700F6694F /* EngineOutput.swift */; };
 		B1A5A6D42532ED6D0007A258 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C22532ED6C0007A258 /* AboutView.swift */; };
 		B1A5A6D52532ED6D0007A258 /* Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C32532ED6C0007A258 /* Benchmark.swift */; };
 		B1A5A6D62532ED6D0007A258 /* OptionPieceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C42532ED6C0007A258 /* OptionPieceStyle.swift */; };
 		B1A5A6D72532ED6D0007A258 /* OptionUserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C52532ED6C0007A258 /* OptionUserName.swift */; };
 		B1A5A6D82532ED6D0007A258 /* OptionColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C62532ED6C0007A258 /* OptionColorScheme.swift */; };
-		B1A5A6D92532ED6D0007A258 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C72532ED6C0007A258 /* WebView.swift */; };
+		B1A5A6D92532ED6D0007A258 /* BanksiaWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C72532ED6C0007A258 /* BanksiaWebView.swift */; };
 		B1A5A6DA2532ED6D0007A258 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C82532ED6C0007A258 /* HelpView.swift */; };
 		B1A5A6DB2532ED6D0007A258 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6C92532ED6C0007A258 /* OptionView.swift */; };
 		B1A5A6DC2532ED6D0007A258 /* SoundNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5A6CA2532ED6C0007A258 /* SoundNameView.swift */; };
-		B1B605BC25443657002B3E61 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AFD0925430D370037B09E /* Accelerate.framework */; };
-		B1B605BD25443662002B3E61 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AFD41254311000037B09E /* libz.tbd */; };
 		B1B605CA25443678002B3E61 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AF68D2542E4210037B09E /* Accelerate.framework */; };
 		B1B605CB25443681002B3E61 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AFD33254310DF0037B09E /* libz.tbd */; };
-		B1B6FE3C2544233E002B3E61 /* BsWatchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE3B2544233E002B3E61 /* BsWatchAssets.xcassets */; };
-		B1B6FE612544237F002B3E61 /* WatchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE572544237F002B3E61 /* WatchAssets.xcassets */; };
-		B1B6FE622544237F002B3E61 /* WatchAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE592544237F002B3E61 /* WatchAboutView.swift */; };
-		B1B6FE632544237F002B3E61 /* WatchGameSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5A2544237F002B3E61 /* WatchGameSetup.swift */; };
-		B1B6FE642544237F002B3E61 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5B2544237F002B3E61 /* ComplicationController.swift */; };
-		B1B6FE652544237F002B3E61 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5C2544237F002B3E61 /* WatchApp.swift */; };
-		B1B6FE662544237F002B3E61 /* WatchOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5D2544237F002B3E61 /* WatchOptionView.swift */; };
-		B1B6FE672544237F002B3E61 /* WatchContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5E2544237F002B3E61 /* WatchContentViewExtensions.swift */; };
-		B1B6FE682544237F002B3E61 /* WatchEngineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE5F2544237F002B3E61 /* WatchEngineList.swift */; };
-		B1B6FE98254423A8002B3E61 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE76254423A7002B3E61 /* Move.swift */; };
-		B1B6FE99254423A8002B3E61 /* ChessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE77254423A7002B3E61 /* ChessBoard.swift */; };
-		B1B6FE9A254423A8002B3E61 /* Hist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE78254423A7002B3E61 /* Hist.swift */; };
-		B1B6FE9B254423A8002B3E61 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE79254423A7002B3E61 /* Piece.swift */; };
-		B1B6FE9C254423A8002B3E61 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE7A254423A7002B3E61 /* Result.swift */; };
-		B1B6FE9D254423A8002B3E61 /* ExtensionLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE7B254423A7002B3E61 /* ExtensionLib.swift */; };
-		B1B6FE9E254423A8002B3E61 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE7C254423A7002B3E61 /* Book.swift */; };
-		B1B6FE9F254423A8002B3E61 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE7D254423A7002B3E61 /* Types.swift */; };
-		B1B6FEA0254423A8002B3E61 /* fruit.bin in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE80254423A7002B3E61 /* fruit.bin */; };
-		B1B6FEA1254423A8002B3E61 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE82254423A7002B3E61 /* win.wav */; };
-		B1B6FEA2254423A8002B3E61 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE83254423A7002B3E61 /* move.wav */; };
-		B1B6FEA3254423A8002B3E61 /* alert2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE84254423A7002B3E61 /* alert2.wav */; };
-		B1B6FEA4254423A8002B3E61 /* alert1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE85254423A7002B3E61 /* alert1.wav */; };
-		B1B6FEA5254423A8002B3E61 /* check.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE86254423A7002B3E61 /* check.wav */; };
-		B1B6FEA6254423A8002B3E61 /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE87254423A7002B3E61 /* error.wav */; };
-		B1B6FEA7254423A8002B3E61 /* cap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE88254423A7002B3E61 /* cap.wav */; };
-		B1B6FEA8254423A8002B3E61 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE8A254423A7002B3E61 /* ArrowView.swift */; };
-		B1B6FEA9254423A8002B3E61 /* GAllPieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE8B254423A7002B3E61 /* GAllPieces.swift */; };
-		B1B6FEAA254423A8002B3E61 /* GBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE8C254423A7002B3E61 /* GBoard.swift */; };
-		B1B6FEAB254423A8002B3E61 /* GCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE8D254423A7002B3E61 /* GCell.swift */; };
-		B1B6FEAC254423A8002B3E61 /* GPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE8E254423A7002B3E61 /* GPiece.swift */; };
-		B1B6FEB1254423A8002B3E61 /* pieces.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B6FE94254423A7002B3E61 /* pieces.xcassets */; };
-		B1B6FEB2254423A8002B3E61 /* ChessContentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE96254423A7002B3E61 /* ChessContentExtension.swift */; };
-		B1B6FEB3254423A8002B3E61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6FE97254423A7002B3E61 /* ContentView.swift */; };
 		B1BEC9022AD7633200FCD12B /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BEC9002AD7633200FCD12B /* MetalPerformanceShaders.framework */; };
 		B1BEC9032AD7633300FCD12B /* MetalPerformanceShadersGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BEC9012AD7633200FCD12B /* MetalPerformanceShadersGraph.framework */; };
 		B1BECB472AD7692800FCD12B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BECB462AD7692800FCD12B /* Metal.framework */; };
 		B1C02B092528D43600665CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C02B072528D43600665CA6 /* LaunchScreen.storyboard */; };
-		B1C02BA725294BEE00665CA6 /* BanksiaWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B1C02BA625294BEE00665CA6 /* BanksiaWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B1C618092AE7CD0C0076C755 /* lc0_benchmark.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6159B2AE7CD0A0076C755 /* lc0_benchmark.cc */; };
-		B1C6180A2AE7CD0C0076C755 /* lc0_benchmark.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6159B2AE7CD0A0076C755 /* lc0_benchmark.cc */; };
 		B1C6180B2AE7CD0C0076C755 /* lc0_filesystem.posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A32AE7CD0A0076C755 /* lc0_filesystem.posix.cc */; };
-		B1C6180C2AE7CD0C0076C755 /* lc0_filesystem.posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A32AE7CD0A0076C755 /* lc0_filesystem.posix.cc */; };
 		B1C6180D2AE7CD0C0076C755 /* lc0_configfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A52AE7CD0A0076C755 /* lc0_configfile.cc */; };
-		B1C6180E2AE7CD0C0076C755 /* lc0_configfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A52AE7CD0A0076C755 /* lc0_configfile.cc */; };
 		B1C6180F2AE7CD0C0076C755 /* lc0_weights_adapter.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A92AE7CD0A0076C755 /* lc0_weights_adapter.cc */; };
-		B1C618102AE7CD0C0076C755 /* lc0_weights_adapter.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615A92AE7CD0A0076C755 /* lc0_weights_adapter.cc */; };
 		B1C618112AE7CD0C0076C755 /* lc0_random.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615AE2AE7CD0A0076C755 /* lc0_random.cc */; };
-		B1C618122AE7CD0C0076C755 /* lc0_random.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615AE2AE7CD0A0076C755 /* lc0_random.cc */; };
 		B1C618132AE7CD0C0076C755 /* lc0_protomessage.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615AF2AE7CD0A0076C755 /* lc0_protomessage.cc */; };
-		B1C618142AE7CD0C0076C755 /* lc0_protomessage.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615AF2AE7CD0A0076C755 /* lc0_protomessage.cc */; };
 		B1C618152AE7CD0C0076C755 /* lc0_optionsparser.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615B12AE7CD0A0076C755 /* lc0_optionsparser.cc */; };
-		B1C618162AE7CD0C0076C755 /* lc0_optionsparser.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615B12AE7CD0A0076C755 /* lc0_optionsparser.cc */; };
 		B1C618172AE7CD0C0076C755 /* lc0_commandline.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615B82AE7CD0A0076C755 /* lc0_commandline.cc */; };
-		B1C618182AE7CD0C0076C755 /* lc0_commandline.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615B82AE7CD0A0076C755 /* lc0_commandline.cc */; };
 		B1C618192AE7CD0C0076C755 /* lc0_numa.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C02AE7CD0A0076C755 /* lc0_numa.cc */; };
-		B1C6181A2AE7CD0C0076C755 /* lc0_numa.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C02AE7CD0A0076C755 /* lc0_numa.cc */; };
 		B1C6181B2AE7CD0C0076C755 /* lc0_histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C12AE7CD0A0076C755 /* lc0_histogram.cc */; };
-		B1C6181C2AE7CD0C0076C755 /* lc0_histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C12AE7CD0A0076C755 /* lc0_histogram.cc */; };
 		B1C6181D2AE7CD0C0076C755 /* lc0_optionsdict.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C42AE7CD0A0076C755 /* lc0_optionsdict.cc */; };
-		B1C6181E2AE7CD0C0076C755 /* lc0_optionsdict.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C42AE7CD0A0076C755 /* lc0_optionsdict.cc */; };
 		B1C6181F2AE7CD0C0076C755 /* lc0_files.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C52AE7CD0A0076C755 /* lc0_files.cc */; };
-		B1C618202AE7CD0C0076C755 /* lc0_files.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C52AE7CD0A0076C755 /* lc0_files.cc */; };
 		B1C618212AE7CD0C0076C755 /* lc0_string.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C62AE7CD0A0076C755 /* lc0_string.cc */; };
-		B1C618222AE7CD0C0076C755 /* lc0_string.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C62AE7CD0A0076C755 /* lc0_string.cc */; };
 		B1C618232AE7CD0C0076C755 /* lc0_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C72AE7CD0A0076C755 /* lc0_logging.cc */; };
-		B1C618242AE7CD0C0076C755 /* lc0_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C615C72AE7CD0A0076C755 /* lc0_logging.cc */; };
 		B1C618612AE7CD0D0076C755 /* lc0_syzygy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617202AE7CD0B0076C755 /* lc0_syzygy.cc */; };
-		B1C618622AE7CD0D0076C755 /* lc0_syzygy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617202AE7CD0B0076C755 /* lc0_syzygy.cc */; };
 		B1C618632AE7CD0D0076C755 /* lc0_engine.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617222AE7CD0B0076C755 /* lc0_engine.cc */; };
-		B1C618642AE7CD0D0076C755 /* lc0_engine.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617222AE7CD0B0076C755 /* lc0_engine.cc */; };
 		B1C618652AE7CD0D0076C755 /* lc0_version.inc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617232AE7CD0B0076C755 /* lc0_version.inc */; };
-		B1C618662AE7CD0D0076C755 /* lc0_version.inc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617232AE7CD0B0076C755 /* lc0_version.inc */; };
 		B1C618672AE7CD0D0076C755 /* lc0_position.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617272AE7CD0B0076C755 /* lc0_position.cc */; };
-		B1C618682AE7CD0D0076C755 /* lc0_position.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617272AE7CD0B0076C755 /* lc0_position.cc */; };
 		B1C618692AE7CD0D0076C755 /* lc0_bitboard.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172B2AE7CD0B0076C755 /* lc0_bitboard.cc */; };
-		B1C6186A2AE7CD0D0076C755 /* lc0_bitboard.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172B2AE7CD0B0076C755 /* lc0_bitboard.cc */; };
 		B1C6186B2AE7CD0D0076C755 /* lc0_uciloop.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172C2AE7CD0B0076C755 /* lc0_uciloop.cc */; };
-		B1C6186C2AE7CD0D0076C755 /* lc0_uciloop.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172C2AE7CD0B0076C755 /* lc0_uciloop.cc */; };
 		B1C6186D2AE7CD0D0076C755 /* lc0_board.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172E2AE7CD0B0076C755 /* lc0_board.cc */; };
-		B1C6186E2AE7CD0D0076C755 /* lc0_board.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6172E2AE7CD0B0076C755 /* lc0_board.cc */; };
 		B1C6186F2AE7CD0D0076C755 /* lc0_version.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617302AE7CD0B0076C755 /* lc0_version.cc */; };
-		B1C618702AE7CD0D0076C755 /* lc0_version.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617302AE7CD0B0076C755 /* lc0_version.cc */; };
 		B1C618712AE7CD0D0076C755 /* convolution1.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617342AE7CD0B0076C755 /* convolution1.cc */; };
-		B1C618722AE7CD0D0076C755 /* convolution1.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617342AE7CD0B0076C755 /* convolution1.cc */; };
 		B1C618732AE7CD0D0076C755 /* layer_norm.ispc in Resources */ = {isa = PBXBuildFile; fileRef = B1C617352AE7CD0B0076C755 /* layer_norm.ispc */; };
-		B1C618742AE7CD0D0076C755 /* layer_norm.ispc in Resources */ = {isa = PBXBuildFile; fileRef = B1C617352AE7CD0B0076C755 /* layer_norm.ispc */; };
 		B1C618752AE7CD0D0076C755 /* winograd_transform.ispc in Resources */ = {isa = PBXBuildFile; fileRef = B1C617362AE7CD0B0076C755 /* winograd_transform.ispc */; };
 		B1C618772AE7CD0D0076C755 /* winograd_convolution3.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617382AE7CD0B0076C755 /* winograd_convolution3.cc */; };
-		B1C618782AE7CD0D0076C755 /* winograd_convolution3.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617382AE7CD0B0076C755 /* winograd_convolution3.cc */; };
 		B1C618792AE7CD0D0076C755 /* network_blas.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6173A2AE7CD0B0076C755 /* network_blas.cc */; };
-		B1C6187A2AE7CD0D0076C755 /* network_blas.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6173A2AE7CD0B0076C755 /* network_blas.cc */; };
 		B1C6187B2AE7CD0D0076C755 /* se_unit.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6173B2AE7CD0B0076C755 /* se_unit.cc */; };
-		B1C6187C2AE7CD0D0076C755 /* se_unit.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6173B2AE7CD0B0076C755 /* se_unit.cc */; };
 		B1C6187F2AE7CD0D0076C755 /* fully_connected_layer.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617402AE7CD0B0076C755 /* fully_connected_layer.cc */; };
-		B1C618802AE7CD0D0076C755 /* fully_connected_layer.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617402AE7CD0B0076C755 /* fully_connected_layer.cc */; };
 		B1C618812AE7CD0D0076C755 /* lc0_network_random.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617422AE7CD0B0076C755 /* lc0_network_random.cc */; };
-		B1C618822AE7CD0D0076C755 /* lc0_network_random.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617422AE7CD0B0076C755 /* lc0_network_random.cc */; };
 		B1C618832AE7CD0D0076C755 /* lc0_network_demux.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617452AE7CD0B0076C755 /* lc0_network_demux.cc */; };
-		B1C618842AE7CD0D0076C755 /* lc0_network_demux.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617452AE7CD0B0076C755 /* lc0_network_demux.cc */; };
 		B1C618852AE7CD0D0076C755 /* lc0_network_legacy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617462AE7CD0B0076C755 /* lc0_network_legacy.cc */; };
-		B1C618862AE7CD0D0076C755 /* lc0_network_legacy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617462AE7CD0B0076C755 /* lc0_network_legacy.cc */; };
 		B1C618872AE7CD0D0076C755 /* lc0_network_trivial.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617472AE7CD0B0076C755 /* lc0_network_trivial.cc */; };
-		B1C618882AE7CD0D0076C755 /* lc0_network_trivial.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617472AE7CD0B0076C755 /* lc0_network_trivial.cc */; };
 		B1C618892AE7CD0D0076C755 /* winograd_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6174A2AE7CD0B0076C755 /* winograd_filter.cc */; };
-		B1C6188A2AE7CD0D0076C755 /* winograd_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6174A2AE7CD0B0076C755 /* winograd_filter.cc */; };
-		B1C6188C2AE7CD0D0076C755 /* activation.ispc in Resources */ = {isa = PBXBuildFile; fileRef = B1C6174C2AE7CD0B0076C755 /* activation.ispc */; };
 		B1C6188D2AE7CD0D0076C755 /* activation.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6174E2AE7CD0B0076C755 /* activation.cc */; };
-		B1C6188E2AE7CD0D0076C755 /* activation.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6174E2AE7CD0B0076C755 /* activation.cc */; };
 		B1C6188F2AE7CD0D0076C755 /* lc0_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617512AE7CD0B0076C755 /* lc0_cache.cc */; };
-		B1C618902AE7CD0D0076C755 /* lc0_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617512AE7CD0B0076C755 /* lc0_cache.cc */; };
 		B1C618912AE7CD0D0076C755 /* lc0_network_mux.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617522AE7CD0B0076C755 /* lc0_network_mux.cc */; };
-		B1C618922AE7CD0D0076C755 /* lc0_network_mux.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617522AE7CD0B0076C755 /* lc0_network_mux.cc */; };
 		B1C618932AE7CD0D0076C755 /* lc0_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617532AE7CD0B0076C755 /* lc0_factory.cc */; };
-		B1C618942AE7CD0D0076C755 /* lc0_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617532AE7CD0B0076C755 /* lc0_factory.cc */; };
 		B1C618952AE7CD0D0076C755 /* lc0_encoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617542AE7CD0B0076C755 /* lc0_encoder.cc */; };
-		B1C618962AE7CD0D0076C755 /* lc0_encoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617542AE7CD0B0076C755 /* lc0_encoder.cc */; };
 		B1C618972AE7CD0D0076C755 /* lc0_loader.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617552AE7CD0B0076C755 /* lc0_loader.cc */; };
-		B1C618982AE7CD0D0076C755 /* lc0_loader.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617552AE7CD0B0076C755 /* lc0_loader.cc */; };
 		B1C618992AE7CD0D0076C755 /* lc0_network_rr.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617572AE7CD0B0076C755 /* lc0_network_rr.cc */; };
-		B1C6189A2AE7CD0D0076C755 /* lc0_network_rr.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617572AE7CD0B0076C755 /* lc0_network_rr.cc */; };
 		B1C6189B2AE7CD0D0076C755 /* lc0_network_record.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175A2AE7CD0B0076C755 /* lc0_network_record.cc */; };
-		B1C6189C2AE7CD0D0076C755 /* lc0_network_record.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175A2AE7CD0B0076C755 /* lc0_network_record.cc */; };
 		B1C6189D2AE7CD0D0076C755 /* lc0_network_check.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175B2AE7CD0B0076C755 /* lc0_network_check.cc */; };
-		B1C6189E2AE7CD0D0076C755 /* lc0_network_check.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175B2AE7CD0B0076C755 /* lc0_network_check.cc */; };
 		B1C6189F2AE7CD0D0076C755 /* lc0_decoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175C2AE7CD0B0076C755 /* lc0_decoder.cc */; };
-		B1C618A02AE7CD0D0076C755 /* lc0_decoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175C2AE7CD0B0076C755 /* lc0_decoder.cc */; };
 		B1C618A12AE7CD0D0076C755 /* lc0_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175D2AE7CD0B0076C755 /* lc0_main.cc */; };
-		B1C618A22AE7CD0D0076C755 /* lc0_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6175D2AE7CD0B0076C755 /* lc0_main.cc */; };
 		B1C618A32AE7CD0D0076C755 /* lc0_params.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617602AE7CD0B0076C755 /* lc0_params.cc */; };
-		B1C618A42AE7CD0D0076C755 /* lc0_params.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617602AE7CD0B0076C755 /* lc0_params.cc */; };
 		B1C618A52AE7CD0D0076C755 /* lc0_search.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617612AE7CD0B0076C755 /* lc0_search.cc */; };
-		B1C618A62AE7CD0D0076C755 /* lc0_search.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617612AE7CD0B0076C755 /* lc0_search.cc */; };
 		B1C618A72AE7CD0D0076C755 /* lc0_legacy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617652AE7CD0B0076C755 /* lc0_legacy.cc */; };
-		B1C618A82AE7CD0D0076C755 /* lc0_legacy.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617652AE7CD0B0076C755 /* lc0_legacy.cc */; };
 		B1C618A92AE7CD0D0076C755 /* lc0_alphazero.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617682AE7CD0B0076C755 /* lc0_alphazero.cc */; };
-		B1C618AA2AE7CD0D0076C755 /* lc0_alphazero.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617682AE7CD0B0076C755 /* lc0_alphazero.cc */; };
 		B1C618AB2AE7CD0E0076C755 /* lc0_stoppers.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176A2AE7CD0B0076C755 /* lc0_stoppers.cc */; };
-		B1C618AC2AE7CD0E0076C755 /* lc0_stoppers.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176A2AE7CD0B0076C755 /* lc0_stoppers.cc */; };
 		B1C618AD2AE7CD0E0076C755 /* lc0_smooth.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176C2AE7CD0B0076C755 /* lc0_smooth.cc */; };
-		B1C618AE2AE7CD0E0076C755 /* lc0_smooth.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176C2AE7CD0B0076C755 /* lc0_smooth.cc */; };
 		B1C618AF2AE7CD0E0076C755 /* lc0_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176D2AE7CD0B0076C755 /* lc0_factory.cc */; };
-		B1C618B02AE7CD0E0076C755 /* lc0_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176D2AE7CD0B0076C755 /* lc0_factory.cc */; };
 		B1C618B12AE7CD0E0076C755 /* lc0_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176F2AE7CD0B0076C755 /* lc0_common.cc */; };
-		B1C618B22AE7CD0E0076C755 /* lc0_common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C6176F2AE7CD0B0076C755 /* lc0_common.cc */; };
 		B1C618B32AE7CD0E0076C755 /* lc0_timemgr.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617702AE7CD0B0076C755 /* lc0_timemgr.cc */; };
-		B1C618B42AE7CD0E0076C755 /* lc0_timemgr.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617702AE7CD0B0076C755 /* lc0_timemgr.cc */; };
 		B1C618B52AE7CD0E0076C755 /* lc0_simple.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617712AE7CD0B0076C755 /* lc0_simple.cc */; };
-		B1C618B62AE7CD0E0076C755 /* lc0_simple.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617712AE7CD0B0076C755 /* lc0_simple.cc */; };
 		B1C618B72AE7CD0E0076C755 /* lc0_node.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617752AE7CD0B0076C755 /* lc0_node.cc */; };
-		B1C618B82AE7CD0E0076C755 /* lc0_node.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1C617752AE7CD0B0076C755 /* lc0_node.cc */; };
 		B1C618B92AE7CD0E0076C755 /* stockfishlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617762AE7CD0B0076C755 /* stockfishlib.cpp */; };
-		B1C618BA2AE7CD0E0076C755 /* stockfishlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617762AE7CD0B0076C755 /* stockfishlib.cpp */; };
 		B1C618BB2AE7CD0E0076C755 /* engines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617772AE7CD0B0076C755 /* engines.cpp */; };
-		B1C618BC2AE7CD0E0076C755 /* engines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617772AE7CD0B0076C755 /* engines.cpp */; };
 		B1C618BD2AE7CD0E0076C755 /* rubichess_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617792AE7CD0B0076C755 /* rubichess_engine.cpp */; };
-		B1C618BE2AE7CD0E0076C755 /* rubichess_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617792AE7CD0B0076C755 /* rubichess_engine.cpp */; };
 		B1C618BF2AE7CD0E0076C755 /* rubichess_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177A2AE7CD0B0076C755 /* rubichess_search.cpp */; };
-		B1C618C02AE7CD0E0076C755 /* rubichess_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177A2AE7CD0B0076C755 /* rubichess_search.cpp */; };
 		B1C618C12AE7CD0E0076C755 /* rubichess_cputest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177B2AE7CD0B0076C755 /* rubichess_cputest.cpp */; };
-		B1C618C22AE7CD0E0076C755 /* rubichess_cputest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177B2AE7CD0B0076C755 /* rubichess_cputest.cpp */; };
 		B1C618C32AE7CD0E0076C755 /* rubichess_tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177C2AE7CD0B0076C755 /* rubichess_tbprobe.cpp */; };
-		B1C618C42AE7CD0E0076C755 /* rubichess_tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6177C2AE7CD0B0076C755 /* rubichess_tbprobe.cpp */; };
 		B1C618C72AE7CD0E0076C755 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617812AE7CD0B0076C755 /* inflate.c */; };
-		B1C618C82AE7CD0E0076C755 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617812AE7CD0B0076C755 /* inflate.c */; };
 		B1C618C92AE7CD0E0076C755 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617822AE7CD0B0076C755 /* compress.c */; };
-		B1C618CA2AE7CD0E0076C755 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617822AE7CD0B0076C755 /* compress.c */; };
 		B1C618CB2AE7CD0E0076C755 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617832AE7CD0B0076C755 /* deflate.c */; };
-		B1C618CC2AE7CD0E0076C755 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617832AE7CD0B0076C755 /* deflate.c */; };
 		B1C618CD2AE7CD0E0076C755 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617852AE7CD0B0076C755 /* gzread.c */; };
-		B1C618CE2AE7CD0E0076C755 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617852AE7CD0B0076C755 /* gzread.c */; };
 		B1C618CF2AE7CD0E0076C755 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617882AE7CD0B0076C755 /* crc32.c */; };
-		B1C618D02AE7CD0E0076C755 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617882AE7CD0B0076C755 /* crc32.c */; };
 		B1C618D12AE7CD0E0076C755 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617892AE7CD0B0076C755 /* infback.c */; };
-		B1C618D22AE7CD0E0076C755 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617892AE7CD0B0076C755 /* infback.c */; };
 		B1C618D32AE7CD0E0076C755 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C6178A2AE7CD0B0076C755 /* zutil.c */; };
-		B1C618D42AE7CD0E0076C755 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C6178A2AE7CD0B0076C755 /* zutil.c */; };
 		B1C618D52AE7CD0E0076C755 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C6178E2AE7CD0B0076C755 /* gzlib.c */; };
-		B1C618D62AE7CD0E0076C755 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C6178E2AE7CD0B0076C755 /* gzlib.c */; };
 		B1C618D72AE7CD0E0076C755 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617902AE7CD0B0076C755 /* inftrees.c */; };
-		B1C618D82AE7CD0E0076C755 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617902AE7CD0B0076C755 /* inftrees.c */; };
 		B1C618D92AE7CD0E0076C755 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617912AE7CD0B0076C755 /* uncompr.c */; };
-		B1C618DA2AE7CD0E0076C755 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617912AE7CD0B0076C755 /* uncompr.c */; };
 		B1C618DB2AE7CD0E0076C755 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617922AE7CD0B0076C755 /* gzwrite.c */; };
-		B1C618DC2AE7CD0E0076C755 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617922AE7CD0B0076C755 /* gzwrite.c */; };
 		B1C618DD2AE7CD0E0076C755 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617932AE7CD0B0076C755 /* trees.c */; };
-		B1C618DE2AE7CD0E0076C755 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617932AE7CD0B0076C755 /* trees.c */; };
 		B1C618DF2AE7CD0E0076C755 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617942AE7CD0B0076C755 /* gzclose.c */; };
-		B1C618E02AE7CD0E0076C755 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617942AE7CD0B0076C755 /* gzclose.c */; };
 		B1C618E12AE7CD0E0076C755 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617962AE7CD0B0076C755 /* inffast.c */; };
-		B1C618E22AE7CD0E0076C755 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617962AE7CD0B0076C755 /* inffast.c */; };
 		B1C618E32AE7CD0E0076C755 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617972AE7CD0B0076C755 /* adler32.c */; };
-		B1C618E42AE7CD0E0076C755 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = B1C617972AE7CD0B0076C755 /* adler32.c */; };
 		B1C618E52AE7CD0E0076C755 /* rubichess_transposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617992AE7CD0B0076C755 /* rubichess_transposition.cpp */; };
-		B1C618E62AE7CD0E0076C755 /* rubichess_transposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617992AE7CD0B0076C755 /* rubichess_transposition.cpp */; };
 		B1C619052AE7CD0E0076C755 /* rubichess_book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B52AE7CD0B0076C755 /* rubichess_book.cpp */; };
-		B1C619062AE7CD0E0076C755 /* rubichess_book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B52AE7CD0B0076C755 /* rubichess_book.cpp */; };
 		B1C619072AE7CD0E0076C755 /* rubichess_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B62AE7CD0B0076C755 /* rubichess_main.cpp */; };
-		B1C619082AE7CD0E0076C755 /* rubichess_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B62AE7CD0B0076C755 /* rubichess_main.cpp */; };
 		B1C619092AE7CD0E0076C755 /* rubichess_learn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B72AE7CD0B0076C755 /* rubichess_learn.cpp */; };
-		B1C6190A2AE7CD0E0076C755 /* rubichess_learn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B72AE7CD0B0076C755 /* rubichess_learn.cpp */; };
 		B1C6190B2AE7CD0E0076C755 /* rubichess_eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B82AE7CD0B0076C755 /* rubichess_eval.cpp */; };
-		B1C6190C2AE7CD0E0076C755 /* rubichess_eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B82AE7CD0B0076C755 /* rubichess_eval.cpp */; };
 		B1C6190D2AE7CD0E0076C755 /* rubichess_board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B92AE7CD0B0076C755 /* rubichess_board.cpp */; };
-		B1C6190E2AE7CD0E0076C755 /* rubichess_board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617B92AE7CD0B0076C755 /* rubichess_board.cpp */; };
 		B1C6190F2AE7CD0E0076C755 /* rubichess_texel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BB2AE7CD0B0076C755 /* rubichess_texel.cpp */; };
-		B1C619102AE7CD0E0076C755 /* rubichess_texel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BB2AE7CD0B0076C755 /* rubichess_texel.cpp */; };
 		B1C619112AE7CD0F0076C755 /* rubichess_move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BC2AE7CD0B0076C755 /* rubichess_move.cpp */; };
-		B1C619122AE7CD0F0076C755 /* rubichess_move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BC2AE7CD0B0076C755 /* rubichess_move.cpp */; };
 		B1C619132AE7CD0F0076C755 /* rubichess_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BD2AE7CD0B0076C755 /* rubichess_utils.cpp */; };
-		B1C619142AE7CD0F0076C755 /* rubichess_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BD2AE7CD0B0076C755 /* rubichess_utils.cpp */; };
 		B1C619152AE7CD0F0076C755 /* rubichess_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BE2AE7CD0B0076C755 /* rubichess_nnue.cpp */; };
-		B1C619162AE7CD0F0076C755 /* rubichess_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C617BE2AE7CD0B0076C755 /* rubichess_nnue.cpp */; };
 		B1C619882AE7E49D0076C755 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194B2AE7E49D0076C755 /* thread.cpp */; };
-		B1C619892AE7E49D0076C755 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194B2AE7E49D0076C755 /* thread.cpp */; };
 		B1C6198A2AE7E49D0076C755 /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194D2AE7E49D0076C755 /* timeman.cpp */; };
-		B1C6198B2AE7E49D0076C755 /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194D2AE7E49D0076C755 /* timeman.cpp */; };
 		B1C6198C2AE7E49D0076C755 /* ucioption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194E2AE7E49D0076C755 /* ucioption.cpp */; };
-		B1C6198D2AE7E49D0076C755 /* ucioption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6194E2AE7E49D0076C755 /* ucioption.cpp */; };
 		B1C6198E2AE7E49D0076C755 /* evaluate_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619502AE7E49D0076C755 /* evaluate_nnue.cpp */; };
-		B1C6198F2AE7E49D0076C755 /* evaluate_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619502AE7E49D0076C755 /* evaluate_nnue.cpp */; };
 		B1C619902AE7E49D0076C755 /* half_ka_v2_hm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6195A2AE7E49D0076C755 /* half_ka_v2_hm.cpp */; };
-		B1C619912AE7E49E0076C755 /* half_ka_v2_hm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6195A2AE7E49D0076C755 /* half_ka_v2_hm.cpp */; };
 		B1C619922AE7E49E0076C755 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619602AE7E49D0076C755 /* misc.cpp */; };
-		B1C619932AE7E49E0076C755 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619602AE7E49D0076C755 /* misc.cpp */; };
 		B1C619942AE7E49E0076C755 /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619632AE7E49D0076C755 /* bitboard.cpp */; };
-		B1C619952AE7E49E0076C755 /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619632AE7E49D0076C755 /* bitboard.cpp */; };
 		B1C619962AE7E49E0076C755 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B1C619642AE7E49D0076C755 /* Makefile */; };
-		B1C619972AE7E49E0076C755 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B1C619642AE7E49D0076C755 /* Makefile */; };
 		B1C619982AE7E49E0076C755 /* psqt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619662AE7E49D0076C755 /* psqt.cpp */; };
-		B1C619992AE7E49E0076C755 /* psqt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619662AE7E49D0076C755 /* psqt.cpp */; };
 		B1C6199A2AE7E49E0076C755 /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619672AE7E49D0076C755 /* benchmark.cpp */; };
-		B1C6199B2AE7E49E0076C755 /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619672AE7E49D0076C755 /* benchmark.cpp */; };
 		B1C6199C2AE7E49E0076C755 /* movepick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619682AE7E49D0076C755 /* movepick.cpp */; };
-		B1C6199D2AE7E49E0076C755 /* movepick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619682AE7E49D0076C755 /* movepick.cpp */; };
 		B1C6199E2AE7E49E0076C755 /* tune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196A2AE7E49D0076C755 /* tune.cpp */; };
-		B1C6199F2AE7E49E0076C755 /* tune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196A2AE7E49D0076C755 /* tune.cpp */; };
 		B1C619A02AE7E49E0076C755 /* tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196D2AE7E49D0076C755 /* tbprobe.cpp */; };
-		B1C619A12AE7E49E0076C755 /* tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196D2AE7E49D0076C755 /* tbprobe.cpp */; };
 		B1C619A22AE7E49E0076C755 /* bitbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196F2AE7E49D0076C755 /* bitbase.cpp */; };
-		B1C619A32AE7E49E0076C755 /* bitbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6196F2AE7E49D0076C755 /* bitbase.cpp */; };
 		B1C619A42AE7E49E0076C755 /* evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619702AE7E49D0076C755 /* evaluate.cpp */; };
-		B1C619A52AE7E49E0076C755 /* evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619702AE7E49D0076C755 /* evaluate.cpp */; };
 		B1C619A62AE7E49E0076C755 /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619732AE7E49D0076C755 /* search.cpp */; };
-		B1C619A72AE7E49E0076C755 /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619732AE7E49D0076C755 /* search.cpp */; };
 		B1C619A82AE7E49E0076C755 /* pawns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619772AE7E49D0076C755 /* pawns.cpp */; };
-		B1C619A92AE7E49E0076C755 /* pawns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619772AE7E49D0076C755 /* pawns.cpp */; };
 		B1C619AA2AE7E49E0076C755 /* movegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619792AE7E49D0076C755 /* movegen.cpp */; };
-		B1C619AB2AE7E49E0076C755 /* movegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619792AE7E49D0076C755 /* movegen.cpp */; };
 		B1C619AE2AE7E49E0076C755 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6197D2AE7E49D0076C755 /* material.cpp */; };
-		B1C619AF2AE7E49E0076C755 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6197D2AE7E49D0076C755 /* material.cpp */; };
 		B1C619B02AE7E49E0076C755 /* tt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6197E2AE7E49D0076C755 /* tt.cpp */; };
-		B1C619B12AE7E49E0076C755 /* tt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C6197E2AE7E49D0076C755 /* tt.cpp */; };
 		B1C619B22AE7E49E0076C755 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619812AE7E49D0076C755 /* main.cpp */; };
-		B1C619B32AE7E49E0076C755 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619812AE7E49D0076C755 /* main.cpp */; };
 		B1C619B42AE7E49E0076C755 /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619852AE7E49D0076C755 /* position.cpp */; };
-		B1C619B52AE7E49E0076C755 /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619852AE7E49D0076C755 /* position.cpp */; };
 		B1C619B62AE7E49E0076C755 /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619862AE7E49D0076C755 /* uci.cpp */; };
-		B1C619B72AE7E49E0076C755 /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619862AE7E49D0076C755 /* uci.cpp */; };
 		B1C619B82AE7E49E0076C755 /* endgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619872AE7E49D0076C755 /* endgame.cpp */; };
-		B1C619B92AE7E49E0076C755 /* endgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C619872AE7E49D0076C755 /* endgame.cpp */; };
 		B1C619BF2AE929CE0076C755 /* nn-5af11540bbfe.nnue in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BB2AE929CE0076C755 /* nn-5af11540bbfe.nnue */; };
-		B1C619C02AE929CE0076C755 /* nn-5af11540bbfe.nnue in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BB2AE929CE0076C755 /* nn-5af11540bbfe.nnue */; };
 		B1C619C12AE929CE0076C755 /* 791556.pb.gz in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BC2AE929CE0076C755 /* 791556.pb.gz */; };
 		B1C619C32AE929CE0076C755 /* nn-c257b2ebf1-20230812.nnue in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BD2AE929CE0076C755 /* nn-c257b2ebf1-20230812.nnue */; };
-		B1C619C42AE929CE0076C755 /* nn-c257b2ebf1-20230812.nnue in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BD2AE929CE0076C755 /* nn-c257b2ebf1-20230812.nnue */; };
-		B1C619C62AE929CE0076C755 /* 703810.pb.gz in Resources */ = {isa = PBXBuildFile; fileRef = B1C619BE2AE929CE0076C755 /* 703810.pb.gz */; };
 		B1DA819C255DE8530021C5DC /* GExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8194255DE8520021C5DC /* GExtensions.swift */; };
 		B1DA819D255DE8530021C5DC /* ContentViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8195255DE8520021C5DC /* ContentViewExtension.swift */; };
 		B1DA819E255DE8530021C5DC /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8196255DE8520021C5DC /* BannerVC.swift */; };
 		B1DA819F255DE8530021C5DC /* MenuMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8197255DE8520021C5DC /* MenuMoveView.swift */; };
 		B1DA81A0255DE8530021C5DC /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8198255DE8520021C5DC /* MoveView.swift */; };
 		B1DA81A1255DE8530021C5DC /* MenuGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA8199255DE8520021C5DC /* MenuGame.swift */; };
-		B1DA81A2255DE8530021C5DC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA819A255DE8520021C5DC /* MenuView.swift */; };
+		B1DA81A2255DE8530021C5DC /* BanksiaMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA819A255DE8520021C5DC /* BanksiaMenuView.swift */; };
 		B1DA81A3255DE8530021C5DC /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA819B255DE8520021C5DC /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B1026ECA2543AB3100603CC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B14A8A912528C48900B5704C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1C02B9C25294BEA00665CA6;
-			remoteInfo = BanksiaWatch;
-		};
-		B1C02BA825294BEE00665CA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B14A8A912528C48900B5704C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1C02BA525294BEE00665CA6;
-			remoteInfo = "BanksiaWatch Extension";
-		};
-		B1C02BB725294BEE00665CA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B14A8A912528C48900B5704C /* Project object */;
 			proxyType = 1;
@@ -367,20 +197,8 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B1026EC92543AB3100603CC7 /* BanksiaWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C02BBD25294BEE00665CA6 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				B1C02BA725294BEE00665CA6 /* BanksiaWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -553,17 +371,17 @@
 		B14A8AA52528C48C00B5704C /* BsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BsInfo.plist; sourceTree = "<group>"; };
 		B14A8AEF2528C5E400B5704C /* StockfishWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = StockfishWatch.app; path = "/Users/nguyenpham/workspace/BanksiaIOS/build/Debug-watchos/StockfishWatch.app"; sourceTree = "<absolute>"; };
 		B14A8B262528C76500B5704C /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
-		B14A8B282528C76500B5704C /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		B14A8B282528C76500B5704C /* BanksiaMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaMove.swift; sourceTree = "<group>"; };
 		B14A8B292528C76500B5704C /* ChessBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChessBoard.swift; sourceTree = "<group>"; };
 		B14A8B2A2528C76500B5704C /* Hist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hist.swift; sourceTree = "<group>"; };
 		B14A8B2B2528C76500B5704C /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
-		B14A8B2C2528C76500B5704C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B14A8B2C2528C76500B5704C /* BanksiaResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaResult.swift; sourceTree = "<group>"; };
 		B14A8B2D2528C76500B5704C /* ExtensionLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionLib.swift; sourceTree = "<group>"; };
 		B14A8B2E2528C76500B5704C /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B14A8B2F2528C76500B5704C /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		B14A8B3B2528C76500B5704C /* BsIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BsIcon.xcassets; sourceTree = "<group>"; };
 		B14A8B3D2528C76500B5704C /* ChessContentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChessContentExtension.swift; sourceTree = "<group>"; };
-		B14A8B3E2528C76500B5704C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B14A8B3E2528C76500B5704C /* BanksiaContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaContentView.swift; sourceTree = "<group>"; };
 		B14A8B482528C76500B5704C /* credit.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit.html; sourceTree = "<group>"; };
 		B14A8B492528C76500B5704C /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
 		B14A8B4C2528C76500B5704C /* fruit.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = fruit.bin; sourceTree = "<group>"; };
@@ -575,7 +393,7 @@
 		B14A8B532528C76500B5704C /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
 		B14A8B542528C76500B5704C /* cap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cap.wav; sourceTree = "<group>"; };
 		B14A8B562528C76500B5704C /* BanksiaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaApp.swift; sourceTree = "<group>"; };
-		B14A8B582528C76500B5704C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B14A8B582528C76500B5704C /* BanksiaGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaGame.swift; sourceTree = "<group>"; };
 		B14A8B592528C76500B5704C /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		B14A8B5A2528C76500B5704C /* SoundMng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundMng.swift; sourceTree = "<group>"; };
 		B14A8B5B2528C76500B5704C /* EngineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineData.swift; sourceTree = "<group>"; };
@@ -760,7 +578,7 @@
 		B14A8D182528C8E000B5704C /* engines-bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "engines-bridging-header.h"; sourceTree = "<group>"; };
 		B14A8D192528C8E000B5704C /* engineids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engineids.h; sourceTree = "<group>"; };
 		B16A5F402AE3BA6100F6694F /* EngineOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineOutput.swift; sourceTree = "<group>"; };
-		B16A5F432AE3C33700F6694F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B16A5F432AE3C33700F6694F /* BanksiaGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaGame.swift; sourceTree = "<group>"; };
 		B16A5F442AE3C33700F6694F /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		B16A5F452AE3C33700F6694F /* SoundMng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundMng.swift; sourceTree = "<group>"; };
 		B16A5F462AE3C33700F6694F /* EngineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineData.swift; sourceTree = "<group>"; };
@@ -788,7 +606,7 @@
 		B1A5A6C42532ED6C0007A258 /* OptionPieceStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionPieceStyle.swift; sourceTree = "<group>"; };
 		B1A5A6C52532ED6C0007A258 /* OptionUserName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionUserName.swift; sourceTree = "<group>"; };
 		B1A5A6C62532ED6C0007A258 /* OptionColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionColorScheme.swift; sourceTree = "<group>"; };
-		B1A5A6C72532ED6C0007A258 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B1A5A6C72532ED6C0007A258 /* BanksiaWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaWebView.swift; sourceTree = "<group>"; };
 		B1A5A6C82532ED6C0007A258 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		B1A5A6C92532ED6C0007A258 /* OptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		B1A5A6CA2532ED6C0007A258 /* SoundNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundNameView.swift; sourceTree = "<group>"; };
@@ -830,8 +648,6 @@
 		B1BEC9012AD7633200FCD12B /* MetalPerformanceShadersGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShadersGraph.framework; path = System/Library/Frameworks/MetalPerformanceShadersGraph.framework; sourceTree = SDKROOT; };
 		B1BECB462AD7692800FCD12B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		B1C02B082528D43600665CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B1C02B9D25294BEA00665CA6 /* BanksiaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanksiaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C02BA625294BEE00665CA6 /* BanksiaWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BanksiaWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C03317252996F200665CA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B1C6159A2AE7CD0A0076C755 /* lc0_benchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lc0_benchmark.h; sourceTree = "<group>"; };
 		B1C6159B2AE7CD0A0076C755 /* lc0_benchmark.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lc0_benchmark.cc; sourceTree = "<group>"; };
@@ -1371,7 +1187,7 @@
 		B1DA8197255DE8520021C5DC /* MenuMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMoveView.swift; sourceTree = "<group>"; };
 		B1DA8198255DE8520021C5DC /* MoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
 		B1DA8199255DE8520021C5DC /* MenuGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuGame.swift; sourceTree = "<group>"; };
-		B1DA819A255DE8520021C5DC /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B1DA819A255DE8520021C5DC /* BanksiaMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksiaMenuView.swift; sourceTree = "<group>"; };
 		B1DA819B255DE8520021C5DC /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		D1130534C70D97677100A723 /* libPods-BanksiaIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BanksiaIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1386,22 +1202,6 @@
 				B1BECB472AD7692800FCD12B /* Metal.framework in Frameworks */,
 				B1B605CA25443678002B3E61 /* Accelerate.framework in Frameworks */,
 				B1BEC9032AD7633300FCD12B /* MetalPerformanceShadersGraph.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C02BA325294BEE00665CA6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B605BC25443657002B3E61 /* Accelerate.framework in Frameworks */,
-				B1B605BD25443662002B3E61 /* libz.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEDCD140D76F80D60FE01FE1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1770,8 +1570,6 @@
 			isa = PBXGroup;
 			children = (
 				B14A8A992528C48900B5704C /* BanksiaIOS.app */,
-				B1C02B9D25294BEA00665CA6 /* BanksiaWatch.app */,
-				B1C02BA625294BEE00665CA6 /* BanksiaWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1818,11 +1616,11 @@
 		B14A8B272528C76500B5704C /* chess */ = {
 			isa = PBXGroup;
 			children = (
-				B14A8B282528C76500B5704C /* Move.swift */,
+				B14A8B282528C76500B5704C /* BanksiaMove.swift */,
 				B14A8B292528C76500B5704C /* ChessBoard.swift */,
 				B14A8B2A2528C76500B5704C /* Hist.swift */,
 				B14A8B2B2528C76500B5704C /* Piece.swift */,
-				B14A8B2C2528C76500B5704C /* Result.swift */,
+				B14A8B2C2528C76500B5704C /* BanksiaResult.swift */,
 				B14A8B2D2528C76500B5704C /* ExtensionLib.swift */,
 				B14A8B2E2528C76500B5704C /* Book.swift */,
 				B14A8B2F2528C76500B5704C /* Types.swift */,
@@ -1834,7 +1632,7 @@
 			isa = PBXGroup;
 			children = (
 				B14A8B3D2528C76500B5704C /* ChessContentExtension.swift */,
-				B14A8B3E2528C76500B5704C /* ContentView.swift */,
+				B14A8B3E2528C76500B5704C /* BanksiaContentView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1890,7 +1688,7 @@
 		B14A8B572528C76500B5704C /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B14A8B582528C76500B5704C /* Game.swift */,
+				B14A8B582528C76500B5704C /* BanksiaGame.swift */,
 				B14A8B592528C76500B5704C /* UserData.swift */,
 				B14A8B5A2528C76500B5704C /* SoundMng.swift */,
 				B14A8B5B2528C76500B5704C /* EngineData.swift */,
@@ -2170,7 +1968,7 @@
 		B16A5F422AE3C33700F6694F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B16A5F432AE3C33700F6694F /* Game.swift */,
+				B16A5F432AE3C33700F6694F /* BanksiaGame.swift */,
 				B16A5F442AE3C33700F6694F /* UserData.swift */,
 				B16A5F452AE3C33700F6694F /* SoundMng.swift */,
 				B16A5F462AE3C33700F6694F /* EngineData.swift */,
@@ -2209,7 +2007,7 @@
 				B1A5A6C42532ED6C0007A258 /* OptionPieceStyle.swift */,
 				B1A5A6C52532ED6C0007A258 /* OptionUserName.swift */,
 				B1A5A6C62532ED6C0007A258 /* OptionColorScheme.swift */,
-				B1A5A6C72532ED6C0007A258 /* WebView.swift */,
+				B1A5A6C72532ED6C0007A258 /* BanksiaWebView.swift */,
 				B1A5A6C82532ED6C0007A258 /* HelpView.swift */,
 				B1A5A6C92532ED6C0007A258 /* OptionView.swift */,
 				B1A5A6CA2532ED6C0007A258 /* SoundNameView.swift */,
@@ -3369,7 +3167,7 @@
 				B1DA8197255DE8520021C5DC /* MenuMoveView.swift */,
 				B1DA8198255DE8520021C5DC /* MoveView.swift */,
 				B1DA8199255DE8520021C5DC /* MenuGame.swift */,
-				B1DA819A255DE8520021C5DC /* MenuView.swift */,
+				B1DA819A255DE8520021C5DC /* BanksiaMenuView.swift */,
 				B1DA819B255DE8520021C5DC /* EditView.swift */,
 			);
 			path = "views-ios";
@@ -3390,48 +3188,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				B1C02BB825294BEE00665CA6 /* PBXTargetDependency */,
 				B1026ECB2543AB3100603CC7 /* PBXTargetDependency */,
 			);
 			name = BanksiaIOS;
 			productName = BanksiaIOS;
 			productReference = B14A8A992528C48900B5704C /* BanksiaIOS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B1C02B9C25294BEA00665CA6 /* BanksiaWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1C02BBE25294BEE00665CA6 /* Build configuration list for PBXNativeTarget "BanksiaWatch" */;
-			buildPhases = (
-				B1C02B9B25294BEA00665CA6 /* Resources */,
-				B1C02BBD25294BEE00665CA6 /* Embed App Extensions */,
-				BEDCD140D76F80D60FE01FE1 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1C02BA925294BEE00665CA6 /* PBXTargetDependency */,
-			);
-			name = BanksiaWatch;
-			productName = BanksiaWatch;
-			productReference = B1C02B9D25294BEA00665CA6 /* BanksiaWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		B1C02BA525294BEE00665CA6 /* BanksiaWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1C02BBA25294BEE00665CA6 /* Build configuration list for PBXNativeTarget "BanksiaWatch Extension" */;
-			buildPhases = (
-				B1C02BA225294BEE00665CA6 /* Sources */,
-				B1C02BA325294BEE00665CA6 /* Frameworks */,
-				B1C02BA425294BEE00665CA6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BanksiaWatch Extension";
-			productName = "BanksiaWatch Extension";
-			productReference = B1C02BA625294BEE00665CA6 /* BanksiaWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -3443,12 +3205,6 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					B14A8A982528C48900B5704C = {
-						CreatedOnToolsVersion = 12.0.1;
-					};
-					B1C02B9C25294BEA00665CA6 = {
-						CreatedOnToolsVersion = 12.0.1;
-					};
-					B1C02BA525294BEE00665CA6 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -3467,8 +3223,6 @@
 			projectRoot = "";
 			targets = (
 				B14A8A982528C48900B5704C /* BanksiaIOS */,
-				B1C02B9C25294BEA00665CA6 /* BanksiaWatch */,
-				B1C02BA525294BEE00665CA6 /* BanksiaWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -3499,36 +3253,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1C02B9B25294BEA00665CA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1B6FE3C2544233E002B3E61 /* BsWatchAssets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C02BA425294BEE00665CA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1C6188C2AE7CD0D0076C755 /* activation.ispc in Resources */,
-				B1C619C02AE929CE0076C755 /* nn-5af11540bbfe.nnue in Resources */,
-				B1B6FEA2254423A8002B3E61 /* move.wav in Resources */,
-				B1B6FE612544237F002B3E61 /* WatchAssets.xcassets in Resources */,
-				B1B6FEA3254423A8002B3E61 /* alert2.wav in Resources */,
-				B1B6FEA5254423A8002B3E61 /* check.wav in Resources */,
-				B1B6FEA1254423A8002B3E61 /* win.wav in Resources */,
-				B1B6FEA6254423A8002B3E61 /* error.wav in Resources */,
-				B1C619C42AE929CE0076C755 /* nn-c257b2ebf1-20230812.nnue in Resources */,
-				B1B6FEA7254423A8002B3E61 /* cap.wav in Resources */,
-				B1B6FEB1254423A8002B3E61 /* pieces.xcassets in Resources */,
-				B1B6FEA4254423A8002B3E61 /* alert1.wav in Resources */,
-				B1C618742AE7CD0D0076C755 /* layer_norm.ispc in Resources */,
-				B1C619C62AE929CE0076C755 /* 703810.pb.gz in Resources */,
-				B1B6FEA0254423A8002B3E61 /* fruit.bin in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -3547,17 +3271,17 @@
 				B1C618C92AE7CD0E0076C755 /* compress.c in Sources */,
 				B1C618A72AE7CD0D0076C755 /* lc0_legacy.cc in Sources */,
 				B1DA81A1255DE8530021C5DC /* MenuGame.swift in Sources */,
-				B14A8B8C2528C76500B5704C /* Game.swift in Sources */,
+				B14A8B8C2528C76500B5704C /* BanksiaGame.swift in Sources */,
 				B1C618632AE7CD0D0076C755 /* lc0_engine.cc in Sources */,
 				B1C6198C2AE7E49D0076C755 /* ucioption.cpp in Sources */,
-				B1A5A6D92532ED6D0007A258 /* WebView.swift in Sources */,
+				B1A5A6D92532ED6D0007A258 /* BanksiaWebView.swift in Sources */,
 				B1C619AE2AE7E49E0076C755 /* material.cpp in Sources */,
 				B1C618772AE7CD0D0076C755 /* winograd_convolution3.cc in Sources */,
 				B1C6199A2AE7E49E0076C755 /* benchmark.cpp in Sources */,
 				B1A5A6D72532ED6D0007A258 /* OptionUserName.swift in Sources */,
 				B1C618C32AE7CD0E0076C755 /* rubichess_tbprobe.cpp in Sources */,
 				B1C619A22AE7E49E0076C755 /* bitbase.cpp in Sources */,
-				B14A8B792528C76500B5704C /* ContentView.swift in Sources */,
+				B14A8B792528C76500B5704C /* BanksiaContentView.swift in Sources */,
 				B1C6188F2AE7CD0D0076C755 /* lc0_cache.cc in Sources */,
 				B14A8B6B2528C76500B5704C /* Book.swift in Sources */,
 				B1C618C72AE7CD0E0076C755 /* inflate.c in Sources */,
@@ -3566,7 +3290,7 @@
 				B1C619072AE7CD0E0076C755 /* rubichess_main.cpp in Sources */,
 				B1DA81A3255DE8530021C5DC /* EditView.swift in Sources */,
 				B14A8B912528C76500B5704C /* ArrowView.swift in Sources */,
-				B14A8B692528C76500B5704C /* Result.swift in Sources */,
+				B14A8B692528C76500B5704C /* BanksiaResult.swift in Sources */,
 				B14A8B962528C76500B5704C /* GPiece.swift in Sources */,
 				B1C618232AE7CD0C0076C755 /* lc0_logging.cc in Sources */,
 				B1C618A92AE7CD0D0076C755 /* lc0_alphazero.cc in Sources */,
@@ -3577,7 +3301,7 @@
 				B1A5A6DC2532ED6D0007A258 /* SoundNameView.swift in Sources */,
 				B1C618132AE7CD0C0076C755 /* lc0_protomessage.cc in Sources */,
 				B1C619092AE7CD0E0076C755 /* rubichess_learn.cpp in Sources */,
-				B14A8B652528C76500B5704C /* Move.swift in Sources */,
+				B14A8B652528C76500B5704C /* BanksiaMove.swift in Sources */,
 				B14A8B672528C76500B5704C /* Hist.swift in Sources */,
 				B1C619AA2AE7E49E0076C755 /* movegen.cpp in Sources */,
 				B1C618BF2AE7CD0E0076C755 /* rubichess_search.cpp in Sources */,
@@ -3683,150 +3407,7 @@
 				B1C618092AE7CD0C0076C755 /* lc0_benchmark.cc in Sources */,
 				B1C6181D2AE7CD0C0076C755 /* lc0_optionsdict.cc in Sources */,
 				B1C618CF2AE7CD0E0076C755 /* crc32.c in Sources */,
-				B1DA81A2255DE8530021C5DC /* MenuView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C02BA225294BEE00665CA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1C618962AE7CD0D0076C755 /* lc0_encoder.cc in Sources */,
-				B1C6186A2AE7CD0D0076C755 /* lc0_bitboard.cc in Sources */,
-				B1C618A82AE7CD0D0076C755 /* lc0_legacy.cc in Sources */,
-				B1C618122AE7CD0C0076C755 /* lc0_random.cc in Sources */,
-				B1C6181C2AE7CD0C0076C755 /* lc0_histogram.cc in Sources */,
-				B1C618C02AE7CD0E0076C755 /* rubichess_search.cpp in Sources */,
-				B1C619142AE7CD0F0076C755 /* rubichess_utils.cpp in Sources */,
-				B1C618CE2AE7CD0E0076C755 /* gzread.c in Sources */,
-				B1C6180C2AE7CD0C0076C755 /* lc0_filesystem.posix.cc in Sources */,
-				B1C618BE2AE7CD0E0076C755 /* rubichess_engine.cpp in Sources */,
-				B1C618702AE7CD0D0076C755 /* lc0_version.cc in Sources */,
-				B1C6189C2AE7CD0D0076C755 /* lc0_network_record.cc in Sources */,
-				B1B6FEA8254423A8002B3E61 /* ArrowView.swift in Sources */,
-				B1C618D02AE7CD0E0076C755 /* crc32.c in Sources */,
-				B16A5F482AE3C33700F6694F /* Game.swift in Sources */,
-				B1C618C42AE7CD0E0076C755 /* rubichess_tbprobe.cpp in Sources */,
-				B1C6188E2AE7CD0D0076C755 /* activation.cc in Sources */,
-				B1C6199B2AE7E49E0076C755 /* benchmark.cpp in Sources */,
-				B1C618642AE7CD0D0076C755 /* lc0_engine.cc in Sources */,
-				B1C618E22AE7CD0E0076C755 /* inffast.c in Sources */,
-				B1C618722AE7CD0D0076C755 /* convolution1.cc in Sources */,
-				B1C6186C2AE7CD0D0076C755 /* lc0_uciloop.cc in Sources */,
-				B1C6189E2AE7CD0D0076C755 /* lc0_network_check.cc in Sources */,
-				B1B6FEB2254423A8002B3E61 /* ChessContentExtension.swift in Sources */,
-				B1C6190A2AE7CD0E0076C755 /* rubichess_learn.cpp in Sources */,
-				B1C618CA2AE7CD0E0076C755 /* compress.c in Sources */,
-				B1C618102AE7CD0C0076C755 /* lc0_weights_adapter.cc in Sources */,
-				B1C619A52AE7E49E0076C755 /* evaluate.cpp in Sources */,
-				B1C618DE2AE7CD0E0076C755 /* trees.c in Sources */,
-				B1B6FE9B254423A8002B3E61 /* Piece.swift in Sources */,
-				B1C618982AE7CD0D0076C755 /* lc0_loader.cc in Sources */,
-				B1C6189A2AE7CD0D0076C755 /* lc0_network_rr.cc in Sources */,
-				B1C619B32AE7E49E0076C755 /* main.cpp in Sources */,
-				B1C619972AE7E49E0076C755 /* Makefile in Sources */,
-				B16A5F492AE3C33700F6694F /* UserData.swift in Sources */,
-				B1C619102AE7CD0E0076C755 /* rubichess_texel.cpp in Sources */,
-				B1C618182AE7CD0C0076C755 /* lc0_commandline.cc in Sources */,
-				B1C618BC2AE7CD0E0076C755 /* engines.cpp in Sources */,
-				B1C619A32AE7E49E0076C755 /* bitbase.cpp in Sources */,
-				B1B6FE662544237F002B3E61 /* WatchOptionView.swift in Sources */,
-				B1C618162AE7CD0C0076C755 /* lc0_optionsparser.cc in Sources */,
-				B1C618B22AE7CD0E0076C755 /* lc0_common.cc in Sources */,
-				B16A5F4A2AE3C33700F6694F /* SoundMng.swift in Sources */,
-				B1C619892AE7E49D0076C755 /* thread.cpp in Sources */,
-				B1C618802AE7CD0D0076C755 /* fully_connected_layer.cc in Sources */,
-				B1C619B92AE7E49E0076C755 /* endgame.cpp in Sources */,
-				B1C618142AE7CD0C0076C755 /* lc0_protomessage.cc in Sources */,
-				B1C618A02AE7CD0D0076C755 /* lc0_decoder.cc in Sources */,
-				B1C6181E2AE7CD0C0076C755 /* lc0_optionsdict.cc in Sources */,
-				B1C619A92AE7E49E0076C755 /* pawns.cpp in Sources */,
-				B1C618B82AE7CD0E0076C755 /* lc0_node.cc in Sources */,
-				B1B6FE9E254423A8002B3E61 /* Book.swift in Sources */,
-				B1C6198B2AE7E49D0076C755 /* timeman.cpp in Sources */,
-				B1B6FE9F254423A8002B3E61 /* Types.swift in Sources */,
-				B1B6FEA9254423A8002B3E61 /* GAllPieces.swift in Sources */,
-				B1C619AB2AE7E49E0076C755 /* movegen.cpp in Sources */,
-				B1C618202AE7CD0C0076C755 /* lc0_files.cc in Sources */,
-				B1C619B12AE7E49E0076C755 /* tt.cpp in Sources */,
-				B1C618862AE7CD0D0076C755 /* lc0_network_legacy.cc in Sources */,
-				B1C6186E2AE7CD0D0076C755 /* lc0_board.cc in Sources */,
-				B1C618842AE7CD0D0076C755 /* lc0_network_demux.cc in Sources */,
-				B1C618242AE7CD0C0076C755 /* lc0_logging.cc in Sources */,
-				B1C619912AE7E49E0076C755 /* half_ka_v2_hm.cpp in Sources */,
-				B1C618E62AE7CD0E0076C755 /* rubichess_transposition.cpp in Sources */,
-				B1C619932AE7E49E0076C755 /* misc.cpp in Sources */,
-				B1C618CC2AE7CD0E0076C755 /* deflate.c in Sources */,
-				B1B6FE99254423A8002B3E61 /* ChessBoard.swift in Sources */,
-				B1C618D62AE7CD0E0076C755 /* gzlib.c in Sources */,
-				B1C6199F2AE7E49E0076C755 /* tune.cpp in Sources */,
-				B1C618922AE7CD0D0076C755 /* lc0_network_mux.cc in Sources */,
-				B1C619B72AE7E49E0076C755 /* uci.cpp in Sources */,
-				B1C6199D2AE7E49E0076C755 /* movepick.cpp in Sources */,
-				B1B6FE682544237F002B3E61 /* WatchEngineList.swift in Sources */,
-				B1C618E02AE7CD0E0076C755 /* gzclose.c in Sources */,
-				B1C618C22AE7CD0E0076C755 /* rubichess_cputest.cpp in Sources */,
-				B1C618DA2AE7CD0E0076C755 /* uncompr.c in Sources */,
-				B1C618B62AE7CD0E0076C755 /* lc0_simple.cc in Sources */,
-				B1C618D82AE7CD0E0076C755 /* inftrees.c in Sources */,
-				B1C6181A2AE7CD0C0076C755 /* lc0_numa.cc in Sources */,
-				B1C618782AE7CD0D0076C755 /* winograd_convolution3.cc in Sources */,
-				B1C619062AE7CD0E0076C755 /* rubichess_book.cpp in Sources */,
-				B1B6FE622544237F002B3E61 /* WatchAboutView.swift in Sources */,
-				B1B6FEB3254423A8002B3E61 /* ContentView.swift in Sources */,
-				B1C619082AE7CD0E0076C755 /* rubichess_main.cpp in Sources */,
-				B1C619B52AE7E49E0076C755 /* position.cpp in Sources */,
-				B1C6198F2AE7E49D0076C755 /* evaluate_nnue.cpp in Sources */,
-				B1B6FE652544237F002B3E61 /* WatchApp.swift in Sources */,
-				B1C618D22AE7CD0E0076C755 /* infback.c in Sources */,
-				B1C618E42AE7CD0E0076C755 /* adler32.c in Sources */,
-				B1C618AE2AE7CD0E0076C755 /* lc0_smooth.cc in Sources */,
-				B1C618A42AE7CD0D0076C755 /* lc0_params.cc in Sources */,
-				B1C6188A2AE7CD0D0076C755 /* winograd_filter.cc in Sources */,
-				B1C619952AE7E49E0076C755 /* bitboard.cpp in Sources */,
-				B1C618882AE7CD0D0076C755 /* lc0_network_trivial.cc in Sources */,
-				B1C619122AE7CD0F0076C755 /* rubichess_move.cpp in Sources */,
-				B1C618A22AE7CD0D0076C755 /* lc0_main.cc in Sources */,
-				B1C618C82AE7CD0E0076C755 /* inflate.c in Sources */,
-				B1C618822AE7CD0D0076C755 /* lc0_network_random.cc in Sources */,
-				B1B6FE9C254423A8002B3E61 /* Result.swift in Sources */,
-				B1C6187A2AE7CD0D0076C755 /* network_blas.cc in Sources */,
-				B1C6187C2AE7CD0D0076C755 /* se_unit.cc in Sources */,
-				B1B6FE9D254423A8002B3E61 /* ExtensionLib.swift in Sources */,
-				B1C618682AE7CD0D0076C755 /* lc0_position.cc in Sources */,
-				B1B6FEAC254423A8002B3E61 /* GPiece.swift in Sources */,
-				B1C619162AE7CD0F0076C755 /* rubichess_nnue.cpp in Sources */,
-				B1C618DC2AE7CD0E0076C755 /* gzwrite.c in Sources */,
-				B1C618AA2AE7CD0D0076C755 /* lc0_alphazero.cc in Sources */,
-				B1C6190E2AE7CD0E0076C755 /* rubichess_board.cpp in Sources */,
-				B1B6FE98254423A8002B3E61 /* Move.swift in Sources */,
-				B1C619AF2AE7E49E0076C755 /* material.cpp in Sources */,
-				B1C618942AE7CD0D0076C755 /* lc0_factory.cc in Sources */,
-				B1C618902AE7CD0D0076C755 /* lc0_cache.cc in Sources */,
-				B1C619992AE7E49E0076C755 /* psqt.cpp in Sources */,
-				B16A5F4B2AE3C33700F6694F /* EngineData.swift in Sources */,
-				B1C618222AE7CD0C0076C755 /* lc0_string.cc in Sources */,
-				B1C618B42AE7CD0E0076C755 /* lc0_timemgr.cc in Sources */,
-				B1B6FE632544237F002B3E61 /* WatchGameSetup.swift in Sources */,
-				B1C6180A2AE7CD0C0076C755 /* lc0_benchmark.cc in Sources */,
-				B1C618662AE7CD0D0076C755 /* lc0_version.inc in Sources */,
-				B1C6198D2AE7E49D0076C755 /* ucioption.cpp in Sources */,
-				B1C618AC2AE7CD0E0076C755 /* lc0_stoppers.cc in Sources */,
-				B1C619A72AE7E49E0076C755 /* search.cpp in Sources */,
-				B1C6190C2AE7CD0E0076C755 /* rubichess_eval.cpp in Sources */,
-				B1B6FE672544237F002B3E61 /* WatchContentViewExtensions.swift in Sources */,
-				B1C618D42AE7CD0E0076C755 /* zutil.c in Sources */,
-				B1B6FE642544237F002B3E61 /* ComplicationController.swift in Sources */,
-				B1C618B02AE7CD0E0076C755 /* lc0_factory.cc in Sources */,
-				B1C618BA2AE7CD0E0076C755 /* stockfishlib.cpp in Sources */,
-				B1C6180E2AE7CD0C0076C755 /* lc0_configfile.cc in Sources */,
-				B16A5F4C2AE3C33700F6694F /* EngineOutput.swift in Sources */,
-				B1C618622AE7CD0D0076C755 /* lc0_syzygy.cc in Sources */,
-				B1B6FEAA254423A8002B3E61 /* GBoard.swift in Sources */,
-				B1C618A62AE7CD0D0076C755 /* lc0_search.cc in Sources */,
-				B1C619A12AE7E49E0076C755 /* tbprobe.cpp in Sources */,
-				B1B6FE9A254423A8002B3E61 /* Hist.swift in Sources */,
-				B1B6FEAB254423A8002B3E61 /* GCell.swift in Sources */,
+				B1DA81A2255DE8530021C5DC /* BanksiaMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3835,18 +3416,7 @@
 /* Begin PBXTargetDependency section */
 		B1026ECB2543AB3100603CC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B1C02B9C25294BEA00665CA6 /* BanksiaWatch */;
 			targetProxy = B1026ECA2543AB3100603CC7 /* PBXContainerItemProxy */;
-		};
-		B1C02BA925294BEE00665CA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1C02BA525294BEE00665CA6 /* BanksiaWatch Extension */;
-			targetProxy = B1C02BA825294BEE00665CA6 /* PBXContainerItemProxy */;
-		};
-		B1C02BB825294BEE00665CA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1C02B9C25294BEA00665CA6 /* BanksiaWatch */;
-			targetProxy = B1C02BB725294BEE00665CA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4005,7 +3575,6 @@
 				OTHER_CFLAGS = (
 					"-DNO_PEXT",
 					"-DNNUE_EMBEDDING_OFF",
-					"-DUSE_NEON",
 					"-DUSE_POPCNT",
 					"-DUSE_ZLIB",
 					"-D_LARGEFILE64_SOURCE",
@@ -4047,7 +3616,6 @@
 				OTHER_CFLAGS = (
 					"-DNO_PEXT",
 					"-DNNUE_EMBEDDING_OFF",
-					"-DUSE_NEON",
 					"-DUSE_POPCNT",
 					"-DUSE_ZLIB",
 					"-D_LARGEFILE64_SOURCE",
@@ -4062,155 +3630,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/engines/engines-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B1C02BBB25294BEE00665CA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_ASSET_PATHS = "\"BanksiaWatch Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 3FHDXJ5CB2;
-				ENABLE_PREVIEWS = YES;
-				HEADER_SEARCH_PATHS = (
-					$SRCROOT/engines/lc0,
-					$SRCROOT/engines/lc0/Eigen,
-				);
-				INFOPLIST_FILE = "BanksiaWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.1;
-				OTHER_CFLAGS = (
-					"-DNO_PEXT",
-					"-DNNUE_EMBEDDING_OFF",
-					"-DUSE_POPCNT",
-					"-DEIGEN_DONT_VECTORIZE",
-					"-DUSE_NEON",
-					"-DWATCH",
-					"-DUSE_ZLIB",
-					"-D_LARGEFILE64_SOURCE",
-				);
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_SWIFT_FLAGS = "-DWATCH";
-				PRODUCT_BUNDLE_IDENTIFIER = com.softgaroo.banksia.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/engines/engines-bridging-header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		B1C02BBC25294BEE00665CA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_ASSET_PATHS = "\"BanksiaWatch Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 3FHDXJ5CB2;
-				ENABLE_PREVIEWS = YES;
-				HEADER_SEARCH_PATHS = (
-					$SRCROOT/engines/lc0,
-					$SRCROOT/engines/lc0/Eigen,
-				);
-				INFOPLIST_FILE = "BanksiaWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.1;
-				OTHER_CFLAGS = (
-					"-DNO_PEXT",
-					"-DNNUE_EMBEDDING_OFF",
-					"-DUSE_POPCNT",
-					"-DEIGEN_DONT_VECTORIZE",
-					"-DUSE_NEON",
-					"-DWATCH",
-					"-DUSE_ZLIB",
-					"-D_LARGEFILE64_SOURCE",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-O3",
-				);
-				OTHER_SWIFT_FLAGS = "-DWATCH";
-				PRODUCT_BUNDLE_IDENTIFIER = com.softgaroo.banksia.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/engines/engines-bridging-header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
-		B1C02BBF25294BEE00665CA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = 3FHDXJ5CB2;
-				HEADER_SEARCH_PATHS = "";
-				IBSC_MODULE = BanksiaWatch_Extension;
-				INFOPLIST_FILE = BanksiaWatch/Info.plist;
-				MARKETING_VERSION = 1.1;
-				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.softgaroo.banksia.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		B1C02BC025294BEE00665CA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = 3FHDXJ5CB2;
-				HEADER_SEARCH_PATHS = "";
-				IBSC_MODULE = BanksiaWatch_Extension;
-				INFOPLIST_FILE = BanksiaWatch/Info.plist;
-				MARKETING_VERSION = 1.1;
-				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.softgaroo.banksia.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -4231,24 +3650,6 @@
 			buildConfigurations = (
 				B14A8AA92528C48C00B5704C /* Debug */,
 				B14A8AAA2528C48C00B5704C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1C02BBA25294BEE00665CA6 /* Build configuration list for PBXNativeTarget "BanksiaWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1C02BBB25294BEE00665CA6 /* Debug */,
-				B1C02BBC25294BEE00665CA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1C02BBE25294BEE00665CA6 /* Build configuration list for PBXNativeTarget "BanksiaWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1C02BBF25294BEE00665CA6 /* Debug */,
-				B1C02BC025294BEE00665CA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

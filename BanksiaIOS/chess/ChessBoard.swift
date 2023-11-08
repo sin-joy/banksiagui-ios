@@ -32,7 +32,7 @@ struct ChessBoard {
     var histList = [Hist]()
     
     var status = 0
-    var result = Result()
+    var result = BanksiaResult()
     
     var timeLeft:[Int] = [ 60 * 20, 60 * 20 ]
     var moveTimeLeft:[Int] = [ 60 * 3, 60 * 3 ]
@@ -87,7 +87,7 @@ struct ChessBoard {
         return pos >= 0 && pos < pieces.count
     }
     
-    func isValid(move: Move) -> Bool {
+    func isValid(move: BanksiaMove) -> Bool {
         return move.isValid() && isPositionValid(pos: move.from) && isPositionValid(pos: move.dest);
     }
     
@@ -427,7 +427,7 @@ struct ChessBoard {
         return -1
     }
     
-    static func moveFromCoordiateString(_ moveString: String) -> Move {
+    static func moveFromCoordiateString(_ moveString: String) -> BanksiaMove {
         let from = coordinateStringToPos(moveString)
         let dest = coordinateStringToPos(moveString.substring(fromIndex: 2))
         
@@ -443,20 +443,20 @@ struct ChessBoard {
             }
         }
         
-        return Move(from: from, dest: dest, promotion: promotion)
+        return BanksiaMove(from: from, dest: dest, promotion: promotion)
     }
     
-    func moveFromString_castling(_ str: String, _ side: Side) -> Move {
+    func moveFromString_castling(_ str: String, _ side: Side) -> BanksiaMove {
         assert(str == "O-O" || str == "O-O+" || str == "0-0" || str == "O-O-O" || str == "O-O-O+" || str == "0-0-0")
         
         let from = side == Side.black ? 4 : 60
         let dest = from + (str.count < 5 ? 2 : -2)
-        return Move(from: from, dest: dest, promotion: Piece.EMPTY)
+        return BanksiaMove(from: from, dest: dest, promotion: Piece.EMPTY)
     }
     
-    mutating func moveFromString_san(_ str: String) -> Move {
+    mutating func moveFromString_san(_ str: String) -> BanksiaMove {
         if str.count < 2 {
-            return Move.illegalMove
+            return BanksiaMove.illegalMove
         }
         
         if str == "O-O" || str == "O-O+" || str == "0-0" || str == "O-O-O" || str == "O-O-O+" || str == "0-0-0" {
@@ -485,22 +485,22 @@ struct ChessBoard {
             let vec = s.split(separator: "=")
             
             if vec.count != 2 || vec[0].isEmpty || vec[1].isEmpty {
-                return Move.illegalMove /// something wrong
+                return BanksiaMove.illegalMove /// something wrong
             }
             
             promotion = PieceTypeStd.charactor2PieceType(str: String(vec[1])).rawValue
             if promotion <= PieceTypeStd.king.rawValue || promotion >= PieceTypeStd.pawn.rawValue {
-                return Move.illegalMove
+                return BanksiaMove.illegalMove
             }
             
             s = String(vec[0])
             if s.count < 2 || promotion == Piece.EMPTY {
-                return Move.illegalMove
+                return BanksiaMove.illegalMove
             }
         }
         
         if s.count < 2 {
-            return Move.illegalMove
+            return BanksiaMove.illegalMove
         }
         
         //    let destString = s.substr(s.count - 2, 2)
@@ -513,7 +513,7 @@ struct ChessBoard {
         dest = ChessBoard.coordinateStringToPos(destString)
         
         if !isPositionValid(pos: dest) {
-            return Move.illegalMove
+            return BanksiaMove.illegalMove
         }
         
         if s.count > 2 {
@@ -526,7 +526,7 @@ struct ChessBoard {
                 pieceType = PieceTypeStd.charactor2PieceType(str: ch).rawValue
                 
                 if (pieceType == EMPTY) {
-                    return Move.illegalMove
+                    return BanksiaMove.illegalMove
                 }
             }
             
@@ -584,10 +584,10 @@ struct ChessBoard {
                 }
             }
         }
-        return Move(from: from, dest: dest, promotion: promotion);
+        return BanksiaMove(from: from, dest: dest, promotion: promotion);
     }
     
-    func moveString_coordinate(move: Move) -> String {
+    func moveString_coordinate(move: BanksiaMove) -> String {
         var str = ChessBoard.posToCoordinateString(move.from) + ChessBoard.posToCoordinateString(move.dest)
         if move.promotion != EMPTY, let promotionType = PieceTypeStd(rawValue: move.promotion) {
             str += promotionType.getCharactor().uppercased()
@@ -843,10 +843,10 @@ struct ChessBoard {
         for (idx, ss) in moveStringVec.enumerated() {
             
             var move = moveFromString_san(ss)
-            if move == Move.illegalMove {
+            if move == BanksiaMove.illegalMove {
                 move = ChessBoard.moveFromCoordiateString(ss)
                 
-                if (move == Move.illegalMove) {
+                if (move == BanksiaMove.illegalMove) {
                     return false;
                 }
             }
@@ -1656,8 +1656,8 @@ struct ChessBoard {
         return nodes
     }
     
-    mutating func rule() -> Result {
-        let result = Result()
+    mutating func rule() -> BanksiaResult {
+        let result = BanksiaResult()
         
         // Mated or stalemate
         var haveLegalMove = false;
@@ -1780,7 +1780,7 @@ struct ChessBoard {
         if piece.isEmpty()
             || piece.side != side
             || piece.side == cap.side /// (piece.side == cap.side && (piece.type != Piece.KING || cap.type != PieceTypeStd.rook.rawValue))
-            || !Move.isValidPromotion(promotion: promotion) {
+            || !BanksiaMove.isValidPromotion(promotion: promotion) {
             return false;
         }
         

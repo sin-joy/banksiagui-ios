@@ -22,9 +22,9 @@ import SwiftUI
 struct BanksiaIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BanksiaContentView()
                 .environmentObject(UserData())
-                .environmentObject(Game())
+                .environmentObject(BanksiaGame())
         }
     }
 }

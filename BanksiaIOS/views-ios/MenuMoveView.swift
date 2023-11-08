@@ -40,7 +40,7 @@ struct MenuMoveView: View {
                 Text(task.getName())
                     .foregroundColor(task == .cancel ? Color.red : (task == .takeback ? Color(red: 0.4, green: 0.1, blue: 0.1) : Color.blue))
                     .fontWeight(task == .cancel ? .bold : .regular)
-                    .frame(width: self.width, height: ContentView.menuHeight, alignment: .center)
+                    .frame(width: self.width, height: BanksiaContentView.menuHeight, alignment: .center)
             }
             .cornerRadius(20.0)
             .padding(0)
